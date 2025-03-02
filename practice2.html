@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Font Control
+    </title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Customize Paragraph Style
+        </h1>
+        
+        <label for="red">Red (0-255):</label>
+        <input type="number" id="red" min="0" max="255" value="0">
+
+        <label for="green">Green (0-255):</label>
+        <input type="number" id="green" min="0" max="255" value="0">
+
+        <label for="blue">Blue (0-255):</label>
+        <input type="number" id="blue" min="0" max="255" value="0">
+
+        <label for="border-width">Border Width (px):</label>
+        <input type="number" id="border-width" min="0" max="20" value="2">
+
+        <button onclick="updateStyle()">Apply Changes</button>
+
+        <p id="styled-text">
+            This is a sample paragraph. Change my color and border!
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
